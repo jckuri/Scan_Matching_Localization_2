@@ -52,8 +52,8 @@ Moreover, the instructor also suggested to decrease the number of maximum iterat
 
 # Video Demonstrations
 
-**Scan Matching Localization with LIDAR Point Clouds - Algorithm 1: Normal Distributions Transform NDT<br/>
-YouTube**
+**Scan Matching Localization with LIDAR Point Clouds - NDT Algorithm (Improved)<br/>
+https://youtu.be/Im1PoP6d7y0**
 ![NDT_Passed.png](/images/NDT_Passed.png)
 
 **Scan Matching Localization with LIDAR Point Clouds - Algorithm 2: Iterative Closest Point (ICP)<br/>
