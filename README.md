@@ -7,7 +7,7 @@ https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013
 
 Go to the Udacity workspace of the project "Scan Matching Localization" of the Lesson 3 "Localization" of the Self-Driving Car Engineer Nanodegree.
 
-Copy the contents of the file [code/c3-main.cpp](code/c3-main.cpp) into the file `/home/workspace/c3-project/c3-main.cpp` in the Udacity workspace of the project "Scan Matching Localization". You can do it by copying and pasting the contents of the file [code/c3-main.cpp](code/c3-main.cpp) .
+Copy the contents of the file [c3-main.cpp](c3-main.cpp) into the file `/home/workspace/c3-project/c3-main.cpp` in the Udacity workspace of the project "Scan Matching Localization". You can do it by copying and pasting the contents of the file [c3-main.cpp](c3-main.cpp) .
 
 # Usage
 
@@ -39,15 +39,23 @@ Or run the project with the ICP algorithm by using Unix command:
 ./cloud_loc 2
 ```
 
-Once the project is running, click on the map and tap the UP key 3 times, with delays of 1 second between taps. If the green car gets left behind, run the project again and tap the UP key 3 times again. The second run or the third run usually produce better results than the results of the first run. **IMPORTANT: Never stop the Carla simulator.**
+Once the project is running, click on the map and tap the UP key 3 times. This version of the project works at the first run. If the green car gets left behind, run the project again and tap the UP key 3 times again.
+
+The NDT algorithm works better than the ICP algorithm. Even if the car hits the wall at the end, the NDT algorithm will not produce an error greater than 1.2 meters.
+
+# Algorithm Upgrade
+
+This version of the project works better than my first submission because I stored the 6 last estimated X coordinates of the car in order to compute the estimated average speed of the car in the X axis. Then, I added the average speed to the X coordinate of the initial guess. When I read the paper "Robust localization using 3D NDT scan matching with experimentally determined uncertainty and road marker matching" <https://www.researchgate.net/publication/318801657_Robust_localization_using_3D_NDT_scan_matching_with_experimentally_determined_uncertainty_and_road_marker_matching>, I noticed that the researchers use a grid of many initial guesses to improve the fitness score of the NDT algorithm. Given the linear unidirectional nature of the car trajectory of this project, I think it was enough to use only 1 initial guess: The estimated pose plus the average speed of the X coordinate.
+
+Moreover, the instructor also suggested to decrease the number of maximum iterations. And I decrease the number of maximum iterations from 60 to 4. This change produced a fitness score similar to the previous version and a process time 10 times faster than the previous version.
 
 
 # Video Demonstrations
 
 **Scan Matching Localization with LIDAR Point Clouds - Algorithm 1: Normal Distributions Transform NDT<br/>
-https://youtu.be/EOKKcwuBtzo**
+YouTube**
 ![NDT_Passed.png](/images/NDT_Passed.png)
 
 **Scan Matching Localization with LIDAR Point Clouds - Algorithm 2: Iterative Closest Point (ICP)<br/>
-https://www.youtube.com/watch?v=hZeZAm4jvW4**
+YouTube**
 ![ICP_Passed.png](/images/ICP_Passed.png)
