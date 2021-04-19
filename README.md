@@ -7,11 +7,11 @@ https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013
 
 Go to the Udacity workspace of the project "Scan Matching Localization" of the Lesson 3 "Localization" of the Self-Driving Car Engineer Nanodegree.
 
-Copy the contents of the file [c3-main.cpp](c3-main.cpp) into the file `/home/workspace/c3-project/c3-main.cpp` in the Udacity workspace of the project "Scan Matching Localization". You can do it by copying and pasting the contents of the file [c3-main.cpp](c3-main.cpp) .
+Copy the contents of the file [c3-main.cpp](c3-main.cpp) into the file `/home/workspace/c3-project/c3-main.cpp` in the Udacity workspace of the project "Scan Matching Localization". You can do it by copying and pasting the contents of the file [c3-main.cpp](c3-main.cpp).
 
 # Usage
 
-Press the blue button "Desktop". Start one terminal. Run the Carla simulator by using these Unix commands:
+Enable GPU Mode. Press the blue button "Desktop". Start one terminal in Desktop. Run the Carla simulator by using these Unix commands:
 
 ```
 su - student # Ignore Permission Denied, if you see student@ you are good
@@ -19,7 +19,7 @@ cd /home/workspace/c3-project
 ./run_carla.sh
 ```
 
-Start another terminal. Compile the project by using these Unix commands:
+Start another terminal in Desktop. Compile the project by using these Unix commands:
 
 ```
 cd /home/workspace/c3-project
