@@ -52,6 +52,8 @@ Moreover, the instructor also suggested to decrease the number of maximum iterat
 
 # Video Demonstrations
 
+For this second submission, I captured the video directly from the Udacity workspace; and the play speed of the video is the same speed in which the video was recorded. I didn't speed up the video like I did in my first submission.
+
 **Scan Matching Localization with LIDAR Point Clouds - NDT Algorithm (Improved)<br/>
 https://youtu.be/Im1PoP6d7y0**
 ![NDT_Passed.png](/images/NDT_Passed.png)
