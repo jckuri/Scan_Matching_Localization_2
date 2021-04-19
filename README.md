@@ -5,7 +5,7 @@ https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013
 
 # Installation
 
-Go to the Udacity workspace of the project "Scan Matching Localization" of the Lesson 3 "Localization" of the Self-Driving Car Engineer Nanodegree.
+Go to the Udacity workspace of the project "Scan Matching Localization" of the Lesson 3 "Localization" of the Self-Driving Car Engineer Nanodegree. Optionally, you can click on "Menu => Refresh Workspace..." if you want to get a fresh copy of the project.
 
 Copy the contents of the file [c3-main.cpp](c3-main.cpp) into the file `/home/workspace/c3-project/c3-main.cpp` in the Udacity workspace of the project "Scan Matching Localization". You can do it by copying and pasting the contents of the file [c3-main.cpp](c3-main.cpp).
 
