@@ -39,7 +39,7 @@ Or run the project with the ICP algorithm by using Unix command:
 ./cloud_loc 2
 ```
 
-Once the project is running, click on the map and tap the UP key 3 times. This version of the project works at the first run. If the green car gets left behind, run the project again and tap the UP key 3 times again.
+Once the project is running, click on the map and tap the UP key 3 times. This improved version of the project normally works at the first run. However, if the green car gets left behind, run the project again and tap the UP key 3 times again.
 
 The NDT algorithm works better than the ICP algorithm. Even if the car hits the wall at the end, the NDT algorithm will not produce an error greater than 1.2 meters.
 
